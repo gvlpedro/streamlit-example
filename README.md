@@ -6,4 +6,6 @@ If you have any questions, checkout our [documentation](https://docs.streamlit.i
 forums](https://discuss.streamlit.io).
 
 
-``` docker build -t streamlit .
+``` 
+docker build -t streamlit .
+```
