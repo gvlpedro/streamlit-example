@@ -1,10 +1,6 @@
-# Welcome to Streamlit!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire. :heart:
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
+# Build
 
 ``` 
 docker build -t streamlit .
@@ -13,3 +9,28 @@ docker build -t streamlit .
 ```
 docker run -p 8501:8501 streamlit
 ```
+
+
+
+# Clean docker images
+
+
+## To stop all Docker containers
+
+```
+docker kill $(docker ps -q)
+```
+
+## To remove all Docker Containers
+
+```
+docker rm $(docker ps -a -q)
+```
+
+
+## To remove all Docker images, run this command:
+
+```
+docker rmi $(docker images -q)
+
+``
